@@ -1,8 +1,10 @@
-document.getElementById("miBoton").addEventListener("click", function(event) {
-    alert("Hola!");
-    event.stopPropagation();
-});
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("miBoton").addEventListener("click", (event) {
+        alert("Hola!");
+        event.stopPropagation();
+    });
 
-document.getElementById("mi-div").addEventListener("click", function() {
-    alert("Hola! Soy el div");
+    document.getElementById("mi-div").addEventListener("click", () {
+        alert("Hola! Soy el div");
+    });
 });
